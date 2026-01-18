@@ -7,6 +7,12 @@ intents.members = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
+GUILD_ID = 1314991397585031281  # optional, speeds up slash commands
+ACCESS_ROLE_ID = 1348245852874997822  # role granted on success
+# REQUIRED TVA TIME (this is the key)
+REQUIRED_HOUR = 6
+REQUIRED_MINUTE = 0
+
 # --- USER STATE ---
 user_state = {}  # user_id: {"hour": None, "minute": None}
 
